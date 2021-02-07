@@ -4,11 +4,6 @@ exports[`expect to render SearchBox component 1`] = `
 <div
   className="pa2"
 >
-  <label
-    htmlFor="searchBox"
-  >
-    search box
-  </label>
   <input
     className="pa3 ba b--green bg-lightest-blue"
     id="searchBox"
