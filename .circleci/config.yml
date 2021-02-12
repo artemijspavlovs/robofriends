@@ -1,0 +1,20 @@
+version: 2
+jobs:
+  first:
+    docker:
+      - image: circleci/ruby:2.4.1
+    steps:
+      - checkout
+      - run: echo 'hello world'
+  second:
+    docker:
+      - image: circleci/ruby:2.4.1
+    steps:
+      - checkout
+      - run: echo 'hello world'
+  workflows:
+    version: 2
+    first_second:
+      jobs:
+        - first
+        - second
