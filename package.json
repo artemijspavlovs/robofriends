@@ -6,7 +6,7 @@
   "jest": {
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
-    ],
+    ]
   },
   "dependencies": {
     "react": "^16.13.1",
