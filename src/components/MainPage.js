@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
@@ -17,7 +16,7 @@ class MainPage extends Component {
   }
 
   render() {
-    const { searchField, onSearchChange, robots, isPending} = this.props
+    const { onSearchChange, robots, isPending} = this.props
     return (
         <div className='tc'>
           <h1 className='f1'>RoboFriends</h1>
