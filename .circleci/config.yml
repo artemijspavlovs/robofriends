@@ -27,6 +27,7 @@ workflows:
   build_test_lint:
     jobs:
       - build
+      - this_is_a_dependency
       - test:
           requires:
             - this_is_a_dependency
